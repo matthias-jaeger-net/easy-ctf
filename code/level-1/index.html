@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Login – Level 1</title>
+  <style>
+    * {
+      font-size: 19px;
+      margin: 5px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <form action="javascript:validate()">
+      <input type="text" id="user-name" name="user-name" placeholder="Enter your user name"><br>
+      <input type="password" id="user-pass" name="user-pass" placeholder="Enter your password"><br>
+      <input id="submit" class="submit white-text" type="submit" value="Submit">
+    </form>
+    </form>
+  </div>
+</body>
+
+<script>
+  function validate() {
+    const user_name = document.getElementById("user-name");
+    const user_pass = document.getElementById("user-pass");
+    if (user_name.value == "manager" && user_pass.value == "123456") {
+      window.location.assign("/code/level-1/0276162.html")
+    }
+  }
+</script>
+
+</html>
