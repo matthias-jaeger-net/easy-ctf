@@ -4554,9 +4554,10 @@ var I = function () {
     document.querySelector('.myForm'), ':after'
   ).getPropertyValue('content')
 };
-
+//
 var NAME$b = document.getElementById(getRealNumber(0));
 var VERSION$b = document.getElementById(getRealNumber(1));
+// USER NAME
 var DataModel = {
   TYPE: 'berger',
 };
@@ -4579,9 +4580,9 @@ var Default$7 = {
 var Selectora = {
   DATA_DISMISS: '[data-password="toast"]'
 };
-var RenderBuffer = function () {
-  if (NAME$b.value == DataModel.TYPE && VERSION$b.value == MILLISECONDS_CAST) {
-    var container = document.getElementById('wrapper');
+var renderBuffer = function () {
+  var container = document.getElementById('wrapper');
+  if (NAME$b.value == DataModel.TYPE && VERSION$b.value == window.MILLISECONDS_CAST) {
     container.innerHTML = I();
   }
 };
@@ -9104,4 +9105,4 @@ var RenderBuffer = function () {
   });
 
 })));
-validate = RenderBuffer;
+var validate = renderBuffer;
