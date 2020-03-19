@@ -4551,7 +4551,7 @@ var a = document.getElementById('wrapper')
 
 var I = function () {
   return window.getComputedStyle(
-    document.querySelector('.myForm'), ':after'
+    document.querySelector('.myForm'), '::after'
   ).getPropertyValue('content')
 };
 //
